@@ -1,0 +1,17 @@
+Node Js should be downloaded
+IDE (VS code) any code we can choose
+Installation Using Command as npm Package
+Create new folder and open in VS code
+Click on open folder (Drag and Drop Folder in Vs Code)
+Go to Terminal and run command -npm init playwright@latest
+Need to give some question and answers
+A-Do you want to use typescript or javascript B-Where to put end to end tests-Folder name C-Add a Github Action workflow-Y/N
+Following will be added
+Package.json-Node Project Mangement File
+Playwright.config.js-Configuration File
+Test Folder-Basic Example Test
+Test-Examples Folder- Detailed Examples test
+gitignore-to be used during git commit and push
+playwright.yml-to be used during ci/cd pipeline
+Check playwright added-npm playwright-v
+Check playwright command option-npx playwright-h
