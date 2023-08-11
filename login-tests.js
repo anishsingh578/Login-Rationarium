@@ -9,8 +9,7 @@ const { chromium } = require('playwright');
 
   try {
     await page.goto('https://app.rationarium.com');
-
-    // Enter invalid email and password
+    
     await page.fill('#email', 'anish@gmail.com');
     await page.fill('#password', 'Anish123');
     await page.click('button[type="signin"]');
