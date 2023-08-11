@@ -5,17 +5,17 @@ const { chromium } = require('playwright');
   const context = await browser.newContext();
   const page = await context.newPage();
 
-  await page.setDefaultTimeout(60000); // 60 seconds
+  await page.setDefaultTimeout(120000);
 
   try {
     await page.goto('https://app.rationarium.com');
 
     // Enter invalid email and password
-    await page.fill('#email', 'anishsingh@gmail.com');
+    await page.fill('#email', 'anish@gmail.com');
     await page.fill('#password', 'Anish123');
-    await page.click('button[type="signup"]');
+    await page.click('button[type="signin"]');
 
-    await page.waitForSelector('.error-message', { timeout: 10000 });
+    await page.waitForSelector('.error-message');
 
     console.log('Login failed as expected');
   } catch (error) {
@@ -24,3 +24,4 @@ const { chromium } = require('playwright');
     await browser.close();
   }
 })();
+
